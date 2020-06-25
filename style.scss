@@ -62,7 +62,7 @@ $alt-3:rgb(150, 119, 178);
 .fa-vk, .fa-instagram, .fa-facebook {
     color:$alt-1;
 }
-li.active a { color: #a5bf5d !important; background-color: whitesmoke !important }
+
 .youtube img {
     width: 100%;
     top: -16.84%;
@@ -779,9 +779,27 @@ p {
     display:none
 }
 
+.navm {
+    display:block;
+}
+
+.navd {
+    display:none;
+}
+
+
+
+li.active a { color: black !important; background-color: whitesmoke !important }
 @media only screen and (min-width: 992px) {
 
-    
+    .navm {
+        display:none !important;
+    }
+
+    .navd {
+        display:block;
+    }
+    li.active a { color: #a5bf5d !important; background-color: whitesmoke !important }
     
 .navbar {
     .navbar-brand {
@@ -1359,3 +1377,15 @@ p {
 .whitesmoke1D, .whitesmoke2D, .whitesmoke3D, .desktop1, .productD, .contactD {
     display:none;
 }
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  
+    .navbar-nav {
+    
+    a {
+        font-size:13px !important;
+    }
+    }
+    
+  }
