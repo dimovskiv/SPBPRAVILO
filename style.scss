@@ -19,6 +19,10 @@ $alt-3:rgb(150, 119, 178);
     }
 }
 
+.t1 {
+    padding-top:10rem !important;
+}
+
 .youtube {
     background-color: #000;
     position: relative;
@@ -38,7 +42,9 @@ $alt-3:rgb(150, 119, 178);
     display:block;
     box-shadow: 0px 15px 10px -15px #111 !important; 
 
-  
+    .navbar-brand {
+        margin-top:5px !important;
+    }
 
 
     .navbar-nav {
@@ -121,20 +127,28 @@ p {
     font-size:16px;
 }
 
+.top {
+ padding-top:8rem !important;
+ height:35%;
+
+}
 
 .masthead{
 
     display:flex;
     flex-direction:column;
-    height:35% !important;
     background-image:url("masthead.jpg");
     background-attachment: fixed;
     background-size:contain;
-    background-position: center;
+
+
     justify-content: flex-end;
     align-items: center;
     color:white;
     position:relative;
+    padding-top:1.5rem !important;
+    height:100%;
+    
 
     .i1 {
         display:none;
@@ -171,7 +185,6 @@ p {
             margin-top:10px;
             height:25%;
             width:90%;
-            
         }
     }
     .button {
@@ -179,7 +192,7 @@ p {
         justify-content: center;
         align-items:center;
         width:100%;
-        margin-top:10px;
+        margin-top:17px;
 
       
 
@@ -397,14 +410,23 @@ p {
         display:flex;
         justify-content: center;
         text-align: center;
+        margin-bottom:15px;
     }
     .item {
-        height:45%;
+  
         width:100%;
         padding-left:1.5rem;
         padding-right:1.5rem;
+        padding-top:3rem;
+        padding-bottom:3rem;
         justify-content: center;
         align-items:center;
+        display:flex;
+        flex-direction:column;
+        .s2 {
+            margin-top:20px;
+        }
+ 
         .subitem {
             p {
                 line-height: 1.9;
@@ -442,6 +464,7 @@ p {
     justify-content: center;
     align-items: center;
     width:100%;
+    padding-bottom:5rem;
 
     .sub {width:100%;}
     p {
@@ -451,6 +474,10 @@ p {
 }
 
 .three {
+    .youtube {
+        height:100%;
+        width:100%;
+    }
     display:flex;
     height:auto;
     flex-direction:column;
@@ -469,6 +496,11 @@ p {
    
     .i1 {
         height:10%;
+        width:100%;
+    }
+
+    .i2 {
+        height:80%;
         width:100%;
     }
     .v {
@@ -552,10 +584,12 @@ p {
         flex-direction:row;
         justify-content: center;   
         align-items:center;
+    
         .itemSub {
             display:flex;
             justify-content: center;
             align-items:center;
+            margin:5px;
             .img-fluid {
                 height:100px;
                 width:100px;
@@ -563,6 +597,7 @@ p {
             p {
                 text-align: center;
                 font-weight:bold;
+                
             }
         }
         
@@ -573,6 +608,7 @@ p {
         display:flex;
         justify-content: center;   
         align-items:center;
+        margin-top:20px;
     }
 
 
@@ -731,6 +767,7 @@ p {
     align-items: center;
     background-image: linear-gradient(to right, #397bc5 , #389b64);
     color:white;
+    padding-bottom:3rem !important;
 }
 
 
@@ -744,13 +781,18 @@ p {
 
 @media only screen and (min-width: 992px) {
 
-
+    
+    
+.navbar {
     .navbar-brand {
         display:flex;
         font-size:40px;
+        margin-top:0 !important;
     
     }
  
+}
+
 
    
     .dopunaD {
@@ -772,10 +814,14 @@ p {
     }
     
 
+    .top {
+        height:90%;
+        padding:0 !important;
+    }
     .masthead {
         
         justify-content: flex-end;
-        height:90% !important;
+        height:100% !important;
         background-image:url("bgBig.jpg");
         background-size:cover;
         background-position:center;
@@ -829,6 +875,7 @@ p {
                 width:20%;
                 box-shadow: 0px 15px 10px -15px #111;  
             }
+            margin-bottom:35px;
         }
         .header {
 
@@ -844,14 +891,17 @@ p {
         flex-wrap:wrap;
         width:100%;
         padding:10rem;
-        padding-top:2rem !important;
-        margin-bottom:5rem;
+      
 
+
+    .youtube {
+            height:100%;
+            width:100%;
+        }
       
         .item {
             width:40% !important;
-            margin:15px;
-            height:300px !important;
+            padding:20px;
           
 
         }
@@ -1086,6 +1136,7 @@ p {
     }
 
     .text {
+        padding-bottom:1.5rem !important;
         h3 {
             font-size:70px;
         }
@@ -1094,21 +1145,35 @@ p {
 
     .t1 {
         margin-top:55px;
+        padding:0 !important;
         .desktopB {
             background-color:white;
         }
     }
 
     .three {
-        height:70%;
-
-        .v {
-            width:50%;
-     
+        .youtube {
+            height:100%;
+            width:100%;
         }
-
+        height:100%;
+        display:flex;
+        flex-direction:column;
+        width:100%;
         .item {
             height:33.3%;
+            width:100%;
+        }
+
+        .i2 {
+            height:50%;
+ 
+        }
+
+    
+
+        .item {
+        
             h3 {
                 font-size:50px;
                 font-weight: bold;
@@ -1134,7 +1199,7 @@ p {
             }
 
             .rnd {
-                top:30%;
+                top:25%;
              p {
                 font-size:30px;
              }

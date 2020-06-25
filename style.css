@@ -8,6 +8,10 @@
   padding: 15px;
 }
 
+.t1 {
+  padding-top: 10rem !important;
+}
+
 .youtube {
   background-color: #000;
   position: relative;
@@ -27,6 +31,10 @@
   display: block;
   -webkit-box-shadow: 0px 15px 10px -15px #111 !important;
           box-shadow: 0px 15px 10px -15px #111 !important;
+}
+
+.navbar .navbar-brand {
+  margin-top: 5px !important;
 }
 
 .navbar .navbar-nav {
@@ -122,6 +130,11 @@ p {
   font-size: 16px;
 }
 
+.top {
+  padding-top: 8rem !important;
+  height: 35%;
+}
+
 .masthead {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -130,11 +143,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 35% !important;
   background-image: url("masthead.jpg");
   background-attachment: fixed;
   background-size: contain;
-  background-position: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -143,6 +154,8 @@ p {
           align-items: center;
   color: white;
   position: relative;
+  padding-top: 1.5rem !important;
+  height: 100%;
   padding-top: 10rem !important;
 }
 
@@ -213,7 +226,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 17px;
 }
 
 .YT-first .button a {
@@ -518,19 +531,32 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .whitesmoke1 .item {
-  height: 45%;
   width: 100%;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.whitesmoke1 .item .s2 {
+  margin-top: 20px;
 }
 
 .whitesmoke1 .item .subitem p {
@@ -582,6 +608,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  padding-bottom: 5rem;
 }
 
 .text .sub {
@@ -616,6 +643,11 @@ p {
           align-items: center;
 }
 
+.three .youtube {
+  height: 100%;
+  width: 100%;
+}
+
 .three p, .three h3 {
   color: white;
   text-align: center;
@@ -623,6 +655,11 @@ p {
 
 .three .i1 {
   height: 10%;
+  width: 100%;
+}
+
+.three .i2 {
+  height: 80%;
   width: 100%;
 }
 
@@ -779,6 +816,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 5px;
 }
 
 .picturePort .i1 .itemSub .img-fluid {
@@ -803,6 +841,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 
 .warning-1 {
@@ -1059,6 +1098,7 @@ p {
   background-image: -webkit-gradient(linear, left top, right top, from(#397bc5), to(#389b64));
   background-image: linear-gradient(to right, #397bc5, #389b64);
   color: white;
+  padding-bottom: 3rem !important;
 }
 
 .dopunaD {
@@ -1070,11 +1110,12 @@ p {
 }
 
 @media only screen and (min-width: 992px) {
-  .navbar-brand {
+  .navbar .navbar-brand {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 40px;
+    margin-top: 0 !important;
   }
   .dopunaD {
     display: -webkit-box;
@@ -1097,11 +1138,15 @@ p {
   .YT-first1 {
     display: none !important;
   }
+  .top {
+    height: 90%;
+    padding: 0 !important;
+  }
   .masthead {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    height: 90% !important;
+    height: 100% !important;
     background-image: url("bgBig.jpg");
     background-size: cover;
     background-position: center;
@@ -1139,6 +1184,9 @@ p {
   .YT-first .d h2 {
     font-size: 70px;
   }
+  .YT-first .button {
+    margin-bottom: 35px;
+  }
   .YT-first .button .btn-1 {
     border: 2px solid black;
     background-color: #fded26;
@@ -1163,13 +1211,14 @@ p {
         flex-wrap: wrap;
     width: 100%;
     padding: 10rem;
-    padding-top: 2rem !important;
-    margin-bottom: 5rem;
+  }
+  .YT-cont .youtube {
+    height: 100%;
+    width: 100%;
   }
   .YT-cont .item {
     width: 40% !important;
-    margin: 15px;
-    height: 300px !important;
+    padding: 20px;
   }
   .YT-cont .i1 {
     margin-top: 0 !important;
@@ -1444,6 +1493,7 @@ p {
             box-shadow: 5px 5px 5px 1px rgba(245, 245, 245, 0.5);
   }
   .text {
+    padding-bottom: 1.5rem !important;
     margin-bottom: 20px;
   }
   .text h3 {
@@ -1451,18 +1501,34 @@ p {
   }
   .t1 {
     margin-top: 55px;
+    padding: 0 !important;
   }
   .t1 .desktopB {
     background-color: white;
   }
   .three {
-    height: 70%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
   }
-  .three .v {
-    width: 50%;
+  .three .youtube {
+    height: 100%;
+    width: 100%;
   }
   .three .item {
     height: 33.3%;
+    width: 100%;
+  }
+  .three .i2 {
+    height: 50%;
+  }
+  .three .item {
     width: 50%;
   }
   .three .item h3 {
@@ -1498,7 +1564,7 @@ p {
     width: 50%;
   }
   .posebanDiv .pic .rnd {
-    top: 30%;
+    top: 25%;
   }
   .posebanDiv .pic .rnd p {
     font-size: 30px;
